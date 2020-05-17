@@ -5,6 +5,7 @@ The objective of this practical assignment is to implement a program that is use
 ## PROBLEM 
 
 We want to implement a dictionary to store information on words. The information to be stored includes the word itself (string), its definition (string), and its parts of speech or category (a char) (noun `N`, verb ‘V’, adjective `J` or adverb `R`). 
+
 We want to: 
 (i) store the data about the words in an efficient manner, 
 (ii) retrieve the information about a word using the word as a search key, and 
