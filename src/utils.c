@@ -1,6 +1,7 @@
 #include "utils.h"
 
 /**
+ * Test commit
  * TODO: Convert upper case to lower case
  * Modify the given string mapping all characters in [A-Z] to [a-z].
 */
