@@ -12,9 +12,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a955eac9-840b-4194-92a8-7fffab2fbd88" name="Default Changelist" comment="var change">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/hash_table.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/hash_table.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hash_table.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/hash_table.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/linked_list.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/linked_list.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/word_info.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/word_info.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +26,20 @@
   </component>
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
@@ -238,12 +255,13 @@
     <state x="436" y="133" width="850" height="807" key="find.popup/-88.-1057.1920.1057/40.23.1640.1027@40.23.1640.1027" timestamp="1587579852691" />
     <state x="441" y="133" width="845" height="807" key="find.popup/-88.-1057.1920.1057/46.23.1634.1027@46.23.1634.1027" timestamp="1583956178947" />
     <state x="438" y="133" width="848" height="807" key="find.popup/240.-877.1440.877/1680.-471.1920.1057/42.23.1638.1027@42.23.1638.1027" timestamp="1584013445694" />
-    <state x="526" y="250" width="674" height="676" key="search.everywhere.popup" timestamp="1587580451596">
-      <screen x="40" y="23" width="1640" height="1027" />
+    <state x="379" y="150" width="672" height="448" key="search.everywhere.popup" timestamp="1590004619164">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="526" y="250" width="674" height="676" key="search.everywhere.popup/-88.-1057.1920.1057/40.23.1640.1027@40.23.1640.1027" timestamp="1587580451596" />
     <state x="531" y="250" width="670" height="676" key="search.everywhere.popup/-88.-1057.1920.1057/47.23.1633.1027@47.23.1633.1027" timestamp="1583959898501" />
     <state x="532" y="250" width="670" height="676" key="search.everywhere.popup/-88.-1057.1920.1057/48.23.1632.1027@48.23.1632.1027" timestamp="1584346841896" />
     <state x="529" y="250" width="670" height="676" key="search.everywhere.popup/-88.-1417.2560.1417/44.23.1636.1027@44.23.1636.1027" timestamp="1583238148791" />
+    <state x="379" y="150" width="672" height="448" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1590004619164" />
   </component>
 </project>

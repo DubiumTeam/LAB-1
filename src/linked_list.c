@@ -4,17 +4,21 @@
  * TODO: Initialize the start Node pointer so that the list is empty.
 */
 void init_list(LinkedList* l) {
-dofjisjfejpoesjfpoejpoe
-
+    l = (LinkedList *)malloc(sizeof(struct LinkedList);
+    l->start->next = NULL;
 }
+    /**
+    A linked list is held using a local pointer variable which points to
+    the first item of the list. If that pointer is also NULL, then the list
+    is considered to be empty.
+    **/
 
 /**
  * TODO: Clear all the nodes of the list, freeing the memory and leaving the list as
  * it would have just been initialized.
 */
 void clear_list(LinkedList *l) {
-    // ADD YOUR CODE HERE
-
+    free(*l);
 }
 
 /**
@@ -22,8 +26,11 @@ void clear_list(LinkedList *l) {
  * changing the start pointer as well as the prev/next pointers accordingly.
 */
 void insert_into_list(LinkedList* l, WordInfo c) {
-    // ADD YOUR CODE HERE
+    l->start = (LinkedList *)malloc(sizeof(struct LinkedList);
 
+    l->start->data = c;
+    l->start->prev = l->start->next
+    l->start->next = l->start->next->next
 }
 
 /**

@@ -25,7 +25,6 @@ typedef struct {
  * Compute the hash key of a word by mapping the first letter to an integer.
  */
 int hash_function(char *word);
-
 /*
  * Initialize the members of the HashTable struct: its size and all the lists
  */
