@@ -5,9 +5,9 @@
  * Modify the given string mapping all characters in [A-Z] to [a-z].
 */
 void str_to_lowercase(char *s){
-    for(int i=0; str[i]!='\0'; i++){
-        if(str[i]>='A' && str[i]<='Z'){
-            str[i] = str[i] + 32;
+    for(int i=0; s[i]!='\0'; i++){
+        if(s[i]>='A' && s[i]<='Z'){
+            s[i] = s[i] + 32;
         }
     }
 }
