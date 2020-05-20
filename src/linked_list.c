@@ -4,7 +4,7 @@
  * TODO: Initialize the start Node pointer so that the list is empty.
 */
 void init_list(LinkedList* l) {
-    // ADD YOUR CODE HERE
+dofjisjfejpoesjfpoejpoe
 
 }
 
