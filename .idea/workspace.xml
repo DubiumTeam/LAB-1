@@ -11,14 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a955eac9-840b-4194-92a8-7fffab2fbd88" name="Default Changelist" comment="var change">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/hash_table.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/hash_table.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hash_table.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/hash_table.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/linked_list.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/linked_list.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/word_info.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/word_info.c" afterDir="false" />
-    </list>
+    <list default="true" id="a955eac9-840b-4194-92a8-7fffab2fbd88" name="Default Changelist" comment="var change" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
