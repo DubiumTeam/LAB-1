@@ -1,4 +1,5 @@
 #include "linked_list.h"
+#include <stdbool.h>
 
 /**
  * Initialize the start Node pointer so that the list is empty.
@@ -18,18 +19,17 @@ is considered to be empty.
  * it would have just been initialized.
 */
 void clear_list(LinkedList *l) {
-    Node* index;     
+    Node *index;     
     if (l->start == NULL) {        
     // Error list empty. Do nothing
     }
     else {
         // Look for first appearance of word in the disctionary (linked list)
         for (index = l->start; index->next != NULL; index = index->next) {
-            free (*index);
+            free (index);
         }
-        free (*index);       // Freeing memory for last node
-        l->start == NULL;    // List initialized
-    
+        free (index);       // Freeing memory for last node
+        l->start == NULL;    // List initialized    
     }   
 }
    
@@ -39,7 +39,7 @@ void clear_list(LinkedList *l) {
  * changing the start pointer as well as the prev/next pointers accordingly.
 */
 void insert_into_list(LinkedList* l, WordInfo c) {      
-    Node* index,node;
+    Node *index,*node;
 
     node = malloc(sizeof(Node));
     strcpy(node->data.word,c.word);
@@ -54,11 +54,11 @@ void insert_into_list(LinkedList* l, WordInfo c) {
     }
     else {        
         // Look for the last nnde
-        for (index = l->start; index->next != NULL; index = index->next;) {
+        for (index = l->start; index->next != NULL; index = index->next) {
         }       
         index->next = node; 
         node->prev = index;
-        note->next = NULL;    
+        node->next = NULL;    
     }
 }
 
@@ -66,14 +66,12 @@ void insert_into_list(LinkedList* l, WordInfo c) {
  * Iterate over the different nodes searching for a WordInfo that contains the given word.
  * Return: A pointer to the node if found or NULL otherwise.
 */
-Node* find_in_list(LinkedList *l, char* word) {
-    Node* index; 
-    if (l->start == NULL) {        
-        // Error list empty
-    }
-    else {        
-        // Look for first appearance of word in the disctionary (linked list)
-        for (index = l->start; index->next != NULL; index = index->next;) {
+Node* find_in_list(LinkedList l, char* word) {
+    Node *index;
+
+    // Look for first appearance of word in the disctionary (linked list)    
+    if (l.start != NULL) {        
+        for (index = l.start; index->next != NULL; index = index->next) {
             if (index->data.word == word) {
                 return index;
             }
@@ -87,7 +85,7 @@ Node* find_in_list(LinkedList *l, char* word) {
  * its memory. It accounts for the start, and the prev/next pointers.
 */
 void delete_node(LinkedList* l, Node* p) {
-    Node* index, prev, next; 
+    Node *index, *prev, *next; 
 
     if (l->start == NULL) {        
         // Error list empty, no node to delete        
@@ -106,7 +104,7 @@ void delete_node(LinkedList* l, Node* p) {
                next->prev = prev;     
             }
             
-            free(*index);
+            free(index);
             return;            
         }    
         else  {
@@ -120,15 +118,15 @@ void delete_node(LinkedList* l, Node* p) {
  * Return true if a node was deleted and false otherwise.
 */
 bool delete_from_list(LinkedList* l, char* word) {
-    Node* index, prev, next; 
+    Node *index, *prev, *next; 
 
     if (l->start == NULL) {        
         // Error list empty
-        return FALSE;
+        return false;
     }
     else {
         // Look for first appearance of word in the disctionary (linked list)
-        for (index = l->start; index->next != NULL; index = index->next;) {            
+        for (index = l->start; index->next != NULL; index = index->next) {            
             if (index->data.word == word) {                
                 prev = index->prev;
                 next = index->next;
@@ -137,12 +135,12 @@ bool delete_from_list(LinkedList* l, char* word) {
                 if (next) {
                     next->prev = prev;
                 }
-                free(*index)
-                return TRUE;        
+                free(index);
+                return true;        
             }
         }
         // No word found in the dictionary
-        return FALSE;    
+        return false;    
     }
 }
 
@@ -150,13 +148,16 @@ bool delete_from_list(LinkedList* l, char* word) {
  * Print all word infos of the list using print_word_info.
 */
 void print_list(LinkedList l) {
-    if (l->start == NULL) {        
+    Node *index;
+    if (l.start == NULL) {        
     // Error list empty    
     }
     else {
-        for (index = l->start; index->next != NULL; index = index->next;) {            
-            printf ("%s [%c]: \t %s ",index->data.word, index->data.category, index->data.definition )
-            )            
+        for (index = l.start; index->next != NULL; index = index->next) {            
+            printf ("%s [%c]: \t %s ",index->data.word, index->data.category, index->data.definition );                        
         }    
     }
 }
+
+
+
