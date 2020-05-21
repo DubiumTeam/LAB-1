@@ -45,10 +45,6 @@ WordInfo create_word_info(char *word, char *definition, char category) {
     return wi;
 }
 
-void init_list(LinkedList* l) {
-    l = malloc(sizeof(struct LinkedLink));
-    l->start = NULL;
-}
 
 void clear_list(LinkedList *l) {
     // ADD YOUR CODE HERE
@@ -56,7 +52,7 @@ void clear_list(LinkedList *l) {
 }
 
 void insert_into_list(LinkedList* l, WordInfo c) {
-    Node *node(void) = malloc(sizeof(Node));
+    Node *node = malloc(sizeof(Node));
     strcpy(node->data.word, c.word);
     strcpy(node->data.definition, c.definition);
     node->data.category = c.category;
@@ -78,6 +74,10 @@ void insert_into_list(LinkedList* l, WordInfo c) {
     }
 }
 
+void init_list(LinkedList* l) {
+    l = malloc(sizeof(LinkedList));
+    l->start = NULL;
+}
 // MAIN FUNCTION
 
 int main(void) {
