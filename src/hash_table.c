@@ -1,7 +1,7 @@
 #include "hash_table.h"
 
 /**
- * TODO: Compute the hash key of a word by mapping the first letter to an integer.
+ * Compute the hash key of a word by mapping the first letter to an integer.
  * There are N=26 possible keys (only low-case letters are considered, it is
  * assumed that all capital letters have been changed using lower_case). If a
  * character not in [a-z] is given, -1 is returned.
@@ -10,48 +10,58 @@
 */
 int hash_function(char* word) {
     int key = word[0] - 'a';
-    // If the values is not between 0-25 means that the character wasn't alpha, we return -1
-    if((key<0) || (key>25)) { key=-1; }
+    
+    // If value not in range (0-25) character is not alpha, so return -1
+    if( (key<0) || (key>25)) { 
+        key=-1; 
+    }
     return key;
     }
 }
 
 /**
- * TODO: Initialize the members of the HashTable struct: its size and all the lists
+ * Initialize the members of the HashTable struct: its size and all the lists
 */
 void init_table(HashTable* dictionary) {
-
-    for(int i=0; i<dictionary->size; i++)
-    {
-        //Allocate memory of the size struct_node_t
-        dictionary[i] = malloc(sizeof(struct dictionary._Node); //Do not cast!
-        //Check if memory is allocated
-        if(dictionary[i] == NULL)
-        {
-            //Memory not allocated, set some error state to handle and break
-            break;
+    dictionary = malloc(sizeof(HashTable)); //Do not cast!
+    //Check if memory is allocated
+    if(dictionary != NULL) {
+        for(int i=0; i<N; i++) {
+            init_list (dictionary->list[i])
         }
-        //Initialize to zero
-        dictionary[i].list->start->data = 0;
-        dictionary[i].list->start->next = NULL;
+        dictionary.size = 0;
+    }
+    else {
+        // Memory not allocated, set some error state to handle 
     }
 }
 
 /**
- * TODO: Clear all lists leaving the HashTable struct as if it was just initialized.
+ * Clear all lists leaving the HashTable struct as if it was just initialized.
 */
 void clear_table(HashTable* dictionary) {
-    free(*dictionary);
+    if(dictionary != NULL) {
+        //Memory not allocated, set some error state to handle and break     
+        for(int i=0; i<N; i++) {
+            clear_list (dictionary->list[i])
+        }
+        dictionary.size = 0;
+    }
+    else {
+        // Memory not allocated, set some error state to handle 
+    }
 }
 
 /**
- * TODO: Look for the WordInfo corresponding to a word by checking which list to search
+ * Look for the WordInfo corresponding to a word by checking which list to search
  * and calling find_in_list.
  * 
  * Return a pointer to the WordInfo if found or NULL otherwise.
 */
 WordInfo* find_word_info(HashTable dictionary, char* word) {
-    // ADD YOUR CODE HERE
+
+    
+
 
     return NULL;
 }

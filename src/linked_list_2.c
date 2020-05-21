@@ -1,7 +1,7 @@
 #include "linked_list.h"
 
 /**
- * TODO: Initialize the start Node pointer so that the list is empty.
+ * Initialize the start Node pointer so that the list is empty.
 */
 void init_list(LinkedList* l) {    
     l = malloc(sizeof(LinkedList));   
