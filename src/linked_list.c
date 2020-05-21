@@ -55,16 +55,50 @@ void insert_into_list(LinkedList* l, WordInfo c) {
  * Return: A pointer to the node if found or NULL otherwise.
 */
 Node* find_in_list(LinkedList l, char* word) {
-    // ADD YOUR CODE HERE
-
-}
+    if (l->start == NULL) {        
+        // Error list empty
+        return $null
+    }
+    else {
+        [Node*] index; 
+        // Look for first appearance of word in the disctionary (linked list)
+        for (index = l->start; index->next != NULL; index = index->next;) {
+            if (index->data.word == word) {
+                return index;
+            }
+        // No word found in the dictionary
+        return $null        
+        }
+    }
+}  
 
 /**
  * TODO: Given a node and the list it belongs to, it removes it from the list freeing
  * its memory. It accounts for the start, and the prev/next pointers.
 */
 void delete_node(LinkedList* l, Node* p) {
-    // ADD YOUR CODE HERE
+    if (l->start == NULL) {        
+        // Error list empty
+        return $null
+    }
+
+    else {
+        [Node*] index; 
+        // Look for the node p in the dictionary
+        for (index = l->start; (index == p) || ( ! index->next ); index = index->next;) {
+            }
+        // No word found in the dictionary
+        if (! index->next ) {
+            // Error node not found
+        }    
+        // Node found, poreed to remove
+        [Node*] next, prev;
+        prev = index->prev; // Previous node  
+        next = index->next; // Following node
+        //...    More code to follow
+    }
+    
+
 
 }
 
