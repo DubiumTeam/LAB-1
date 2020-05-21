@@ -4,8 +4,11 @@
  * TODO: create object WordInfo from these infos
  */
 WordInfo create_word_info(char *word, char *definition, char category) {
-    // ADD YOUR CODE HERE
-
+    WordInfo wi;
+    strcpy(wi.word, word);
+    strcpy(wi.definition, definition);
+    wi.category = category;
+    return wi;
 }
 
 /*

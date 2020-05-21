@@ -4,8 +4,8 @@
  * TODO: Initialize the start Node pointer so that the list is empty.
 */
 void init_list(LinkedList* l) {
-    // ADD YOUR CODE HERE
-
+    l = [LinkedLisk*] malloc(sizeof(struct LinkedLink);
+    l->start = NULL;
 }
 
 /**
@@ -22,8 +22,26 @@ void clear_list(LinkedList *l) {
  * changing the start pointer as well as the prev/next pointers accordingly.
 */
 void insert_into_list(LinkedList* l, WordInfo c) {
-    // ADD YOUR CODE HERE
+    Node * node = malloc(sizeof(struct Node);
+    strcpy(node->data.word,c);
+    strcpy(node->data.definition);
+    node->data.category = c.category;
 
+    // Empty dictionary case
+    if (l->start == NULL) {
+        node->prev = NULL;
+        node->next = NULL;
+        l->start = node;
+    }
+    else {
+        [Node*] index;
+        // Look for the last nnde
+        for (index = l->start; index->next != NULL; index = index->next;) {
+        }
+        index->next = node;
+        node->prev = index;
+        note->next = NULL;
+    }
 }
 
 /**

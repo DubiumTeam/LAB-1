@@ -9,8 +9,17 @@
  * Return the hash key (0-25) or -1.
 */
 int hash_function(char* word) {
-    // ADD YOUR CODE HERE
+    HashTable hash;
 
+    // Let's check if word is alpha low_case
+    if('a' < word[0] < 'z'){
+        // For loop checking if first letter equals [a-z]
+        for(int i=97; i<i+hash.size; i++){
+            if (word[0] == 'i'){
+                hash.list[i].start->data.word[0] = *word;
+            }
+        }
+    }
     return -1;
 }
 
