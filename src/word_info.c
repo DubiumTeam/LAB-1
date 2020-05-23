@@ -3,7 +3,6 @@
 /*
  * TODO: create object WordInfo from these infos
  */
-
 WordInfo create_word_info(char *word, char *definition, char category) {
     WordInfo wi;
     strcpy(wi.word, word);

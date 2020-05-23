@@ -9,11 +9,18 @@
  * Return the hash key (0-25) or -1.
 */
 int hash_function(char* word) {
-    int key = word[0] - 'a';
-    // If the values is not between 0-25 means that the character wasn't alpha, we return -1
-    if((key<0) || (key>25)) { key=-1; }
-    return key;
+    HashTable hash;
+
+    // Let's check if word is alpha low_case
+    if('a' < word[0] < 'z'){
+        // For loop checking if first letter equals [a-z]
+        for(int i=97; i<i+hash.size; i++){
+            if (word[0] == 'i'){
+                hash.list[i].start->data.word[0] = *word;
+            }
+        }
     }
+    return -1;
 }
 
 /**
@@ -24,15 +31,15 @@ void init_table(HashTable* dictionary) {
     for(int i=0; i<dictionary->size; i++)
     {
         //Allocate memory of the size struct_node_t
-        dictionary[i] = malloc(sizeof(struct dictionary._Node); //Do not cast!
+        dictionary->list[i].start = malloc(sizeof(Node);  //Do not cast!
         //Check if memory is allocated
-        if(dictionary[i] == NULL)
+        if( dictionary->list[i].start == NULL)
         {
             //Memory not allocated, set some error state to handle and break
             break;
         }
         //Initialize to zero
-        dictionary[i].list->start->data = 0;
+        // dictionary[i].list->start->data = 0;
         dictionary[i].list->start->next = NULL;
     }
 }
@@ -41,7 +48,7 @@ void init_table(HashTable* dictionary) {
  * TODO: Clear all lists leaving the HashTable struct as if it was just initialized.
 */
 void clear_table(HashTable* dictionary) {
-    free(*dictionary);
+    free(dictionary);
 }
 
 /**
